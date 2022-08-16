@@ -23,10 +23,6 @@ export default function Register() {
     confirmPassword: "",
   });
 
-  const {username} = values;
-
-  console.log(username)
-
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
       navigate("/");
